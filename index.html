@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./develop/css/reset.css">
+    <link rel="stylesheet" href="./develop/css/style.css">
+
+    <title>Coding Quiz</title>
+</head>
+
+
+<body>
+
+    <header>
+        <button id='highscore' name='highscore'>View High Scores</button>
+        <div id='timer'></div>
+    </header>
+
+    <main id='quiz-card'>
+
+        <div id='title'>
+            <h1></h1>
+        </div>
+        
+        <div id='quiz-question'>
+            <h2></h2>
+        </div>
+        
+        <div id='quiz-choice'>
+            <p></p>
+        </div>
+
+        <button id='start' name='start' type='start'></button>
+
+        <section id='user-score'>
+            <div id='complete'></div>
+            <div id='score'></div>
+            <form>
+                <label id='initials'></label>
+                <input type='text' id='user-submission' />
+            </form>
+        </section>
+
+    </main>
+
+    <script src='./develop/js/questions.js'></script>
+    <script src='./develop/js/quiz.js'></script>
+</body>
+
+</html>
