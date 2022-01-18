@@ -1,3 +1,6 @@
+
+// User Choices
+
 var questions = [
     {
         title: "Commonly used data types DO NOT include:",
@@ -50,3 +53,22 @@ var questions = [
         answer: "console.log"
     }
 ];
+
+// Quiz Questions
+
+
+const quizQuestion = document.querySelector('.quiz-question');
+const options = document.q
+
+
+var correct = 0;
+var incorrect = 0;
+
+
+function displayQuestion () {
+    for (var i = 0; i < questions.length; i++) {
+        quizQuestion.textContent = questions[i].title;
+    }
+};
+
+displayQuestion();

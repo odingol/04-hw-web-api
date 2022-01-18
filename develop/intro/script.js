@@ -1,8 +1,9 @@
-var timer = document.querySelector('.timer')
+var startButton = document.querySelector('.start-button');
+let timer = document.querySelector('.time');
 
+// Timer Button 
 
-// Timer Button
-secondsLeft = 60;
+var secondsLeft = 120;
 
 function setTimer() {
     var timerInterval = setInterval(function() {
@@ -13,6 +14,12 @@ function setTimer() {
             clearInterval(timerInterval);
         };
 
-    },1000);
+    }, 1000);
+    
 };
 setTimer();
+
+
+
+
+
