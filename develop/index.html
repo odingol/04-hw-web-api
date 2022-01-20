@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Coding Quiz</title>
+</head>
+
+
+<body class='style-body'>
+
+    <header class='style-header'>
+        <button class='score-button'>View High Scores</button>
+        <div class='time'>
+            <p>Time Left: 120 seconds</p>
+        </div>
+    </header>
+
+
+    <section class='position-intro'>
+        <div class='style-card'>
+            <div class='title'>
+                <h1>Coding Quiz Challenge</h1>
+            </div>
+
+            <div class='prompt'>
+                <p>By pressing the start button, you will begin taking this 5 question timed quiz on the fundamentals of
+                    HTML, CSS, and JavaScript. The quiz is 2 minutes long and if an incorrect answer is chosen there
+                    will be an automatic deduction to your time.</p>
+                <p>Best of Luck!</p>
+            </div>
+            <div class="position-button">
+                <button class='start-button'>Start Quiz!</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="position-quiz">
+        <div class='quiz-card'>
+            <div class='quiz-question'>
+                <h2></h2>
+            </div>
+            <div class='bottom-border'></div>
+            <div class='quiz-choice'>
+                <button id='option-A' class='option'></button>
+                <button id='option-B' class='option'></button>
+                <button id='option-C' class='option'>C</button>
+                <button id='option-D' class='option'>D</button>
+            </div>
+        </div>
+    </section>
+
+    <section class='position-complete'>
+        <div class='complete-card'>
+            <div class='complete-title'>
+                <h1></h1>
+            </div>
+            <div class='results'>
+                <h3></h3>
+            </div>
+            <form class='style-form'>
+                <input class='style-input'></input>
+                <button class= 'submit-button'>Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section class='position-scores'>
+        <div class='highscore-card'>
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+            <div class='position-buttons'>
+                <button class='style-clear'>Clear</button>
+                <button class= 'style-again'>Play Again?</button>
+            </div>
+        </div>
+    </section>
+
+    <script src='quiz.js'></script>
+    <script src='questions.js'></script>
+</body>
+
+</html>
