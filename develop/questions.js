@@ -12,7 +12,7 @@ var questions = [
         answer: "Hypertext Markup Language"
     },
     {
-        title: "What does CSS stand f0r?",
+        title: "What does CSS stand for?",
         choices: [
             "Current Style Sheets",
             "Case Style Sheet",
