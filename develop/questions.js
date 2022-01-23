@@ -2,54 +2,54 @@
 
 var questions = [
     {
-        title: "How many licks does it take to get to a center of a tootsie pop",
+        title: "What does HTML stand for?",
         choices: [
-            "strings",
-            "booleans",
-            "alerts",
-            "numbers"
+            "Hypertext Markup Language",
+            "Hypertext Marking Language",
+            "Hope Transcend Markup Language",
+            "Hyper Transfered Markdown Language"
         ],
-        answer: "alerts"
+        answer: "Hypertext Markup Language"
     },
     {
-        title: "The condition in an if / else statement is enclosed within ____.",
+        title: "What does CSS stand f0r?",
         choices: [
-            "quotes",
-            "curly brackets",
-            "parentheses",
-            "square brackets"
+            "Current Style Sheets",
+            "Case Style Sheet",
+            "Container Styling Sheets",
+            "Cascading Style Sheets"
         ],
-        answer: "parentheses"
+        answer: "Cascading Style Sheets"
     },
     {
-        title: "Arrays in JavaScript can be used to store ____.",
+        title: "Which of the following is NOT considered a data type?",
         choices: [
-            "numbers and strings",
-            "other arrays",
-            "booleans",
-            "all of the above"
+            "String",
+            "Dull",
+            "Number",
+            "None of the above"
         ],
-        answer: "all of the above"
+        answer: "Dull"
     },
     {
-        title: "String values must be enclosed within ____ when being assigned to variables.",
+        title: "Which of the following is a helpful tool for debugging?",
         choices: [
-            "commas",
-            "curly brackets",
-            "quotes",
-            "parentheses"
+            "Console.log",
+            "DevTools",
+            "Google",
+            "All of the above"
         ],
-        answer: "quotes"
+        answer: "All of the above"
     },
     {
-        title: "A very useful tool used during development and debugging for printing content to the debugger is:",
+        title: "_____ is used to store code remotely",
         choices: [
-            "JavaScript",
-            "terminal / bash",
-            "for loops",
-            "console.log"
+            "Git",
+            "Git Hub",
+            "Repository",
+            "All of the above"
         ],
-        answer: "console.log"
+        answer: "All of the above"
     }
 ];
 
@@ -64,7 +64,7 @@ function setTimer() {
         secondsLeft--;
         timer.textContent = 'Time Left: ' + secondsLeft + ' seconds';
 
-        if (secondsLeft === 0 || questions.length <= currentQuestion ) {
+        if (secondsLeft <= 0 || questions.length <= currentQuestion ) {
             clearInterval(timerInterval);
             body.textContent = '';
             body.appendChild(quizComplete);
@@ -72,7 +72,6 @@ function setTimer() {
             timeSection.textContent = '';
             displayResults();
         }
-
 
     }, 1000);
 
@@ -98,6 +97,7 @@ startButton.addEventListener('click', function(){
     body.appendChild(quiz);
      
     setTimer();
+    displayQuestion();
 });
 
 
@@ -169,10 +169,14 @@ function displayQuestion() {
 
 var results = document.querySelector('.results');
 var submission = document.querySelector('.submit-button');
-var inputInitial = document.querySelector('.style-input')
+var inputInitial = document.querySelector('.style-input');
 
 function displayResults() {
-    results.textContent = 'Your score is: ' + correct + "/5";
+    if (correct < 5) {
+    results.textContent = 'Your score is: ' + correct + "/5 " 
+    results.setAttribute('style', 'font-size:25px');
+    }
+
 }
 
 
@@ -208,11 +212,10 @@ function displayHighScores() {
 
 var clearButton = document.querySelector('.style-clear');
 var playAgain = document.querySelector('.style-again');
+var scoreList = document.querySelector('.score-list');
 
 clearButton.addEventListener('click', function() {
-    firstPlace.textContent = '';
-    secondPlace.textContent = '';
-    thirdPlace.textContent = '';
+    scoreList.textContent = '';
 
 });
 

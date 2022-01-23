@@ -14,7 +14,7 @@
 
 
 <body class='style-body'>
-    
+
 
     <nav class="navbar navbar-light bg-transparent text-dark">
         <button class='score-button'>View High Score</button>
@@ -42,7 +42,7 @@
                     <p>Best of Luck!</p>
                 </div>
                 <div class="position-button">
-                    <button class='start-button'>Start Quiz!</button>
+                    <button class='start-button'>Start</button>
                 </div>
             </div>
         </section>
@@ -63,23 +63,29 @@
         </section>
 
         <section class='position-complete'>
-            <div class='complete-card'>
+            <div class='complete-card'>     
                 <div class='complete-title'>
                     <h1></h1>
                 </div>
                 <div class='results'>
-                    <h3></h3>
+                    <h3>Your Score is: 5/5 &#128512</h3>
                 </div>
                 <form class='style-form'>
-                    <input type='text' name='submit' class='style-input' required>
-                    <button class='submit-button'>Submit</button>
+                    <input type='text' name='submit' class='style-input' placeholder="  initials here" required>
+                    <div class='align-button'>
+                        <button class='submit-button'>Submit</button>
+                    </div>
                 </form>
             </div>
         </section>
 
         <section class='position-scores'>
             <div class='highscore-card'>
-                <ol>
+                <div class='position-score-text'>
+                    <h2>High Scores</h2>
+                    <div class='bottom-border'></div>
+                </div>
+                <ol class='score-list'>
                     <li class='first'></li>
                 </ol>
                 <div class='position-buttons'>
