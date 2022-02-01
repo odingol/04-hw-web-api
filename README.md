@@ -58,7 +58,7 @@ SO THAT I can gauge my progress compared to my peers
 
 
 ## External Links
-[Deployed Application](https://odingol.github.io/04-hw-web-api/)
+[Deployed Application](https://odingol.github.io/04-hw-web-api/develop)
 
 [GitHub Repository](https://github.com/odingol/04-hw-web-api)
 
