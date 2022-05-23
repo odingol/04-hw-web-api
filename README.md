@@ -1,4 +1,4 @@
-# 04-HW-WEB-API
+# code-quiz
 
 ## My Task
 
