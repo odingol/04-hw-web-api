@@ -58,7 +58,7 @@ SO THAT I can gauge my progress compared to my peers
 
 
 ## External Links
-[Deployed Application](https://odingol.github.io/code-quiz/)
+[Deployed Application](https://lucent-cassata-212b1d.netlify.app)
 
 [GitHub Repository](https://github.com/odingol/04-hw-web-api)
 
