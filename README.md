@@ -31,7 +31,7 @@ SO THAT I can gauge my progress compared to my peers
 
 <br>The following animation shows the application's appearance and functionality:<br><br>
 
-![quiz page](develop/images/coding-quiz.gif)
+![quiz page](images/coding-quiz.gif)
 
 <br><br>
 
